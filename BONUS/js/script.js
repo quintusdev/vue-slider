@@ -37,6 +37,10 @@ createApp({
             activeImage: 0,
         }
     },
+    // nel metodo created di VUEJS invoco la funzione autoScroll
+    created() {
+        this.autoScroll();
+    },
     methods: {
         changeImg(index){
             this.activeImage = index;
@@ -58,6 +62,12 @@ createApp({
             if(this.activeImage < 0){
                 this.activeImage = this.slides.length - 1;
             }
+        },
+        // Implemento la funzione Autoscroll ogni 3 secondi
+        autoScroll(){
+            this.autoScroll = setInterval(()=> {
+                this.nextImg()
+            }, 3000)
         }
     },
 }).mount('#app')
