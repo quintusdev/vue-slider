@@ -29,3 +29,5 @@ BONUS
 
 2.1 
 Creo una funzione AUTOPLAY in modo che cambi immagine ogni 3 secondi in maniera automatica e la assegno come classe nel DOM;
+
+3. Creo un ulteriore funzione di StartAutoScroll e StopAutoScroll  e le applico nel DOM all'ITEM con le funzioni MOUSEOVER E MOUSELEAVE;
