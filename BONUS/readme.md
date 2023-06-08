@@ -25,4 +25,7 @@ BONUS
 
 1. Implementata funzione CHANGEIMG cambia direttamente l'immagine visualizzata nell'ITEM:
 
-2. 
+2. Creo un metodo CREATED, dove implemento il this con la funzione.
+
+2.1 
+Creo una funzione AUTOPLAY in modo che cambi immagine ogni 3 secondi in maniera automatica e la assegno come classe nel DOM;
