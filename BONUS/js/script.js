@@ -39,7 +39,7 @@ createApp({
     },
     // nel metodo created di VUEJS invoco la funzione autoScroll
     created() {
-        this.autoScroll();
+        this.startAutoScroll();
     },
     methods: {
         changeImg(index){
@@ -64,10 +64,14 @@ createApp({
             }
         },
         // Implemento la funzione Autoscroll ogni 3 secondi
-        autoScroll(){
+        startAutoScroll(){
             this.autoScroll = setInterval(()=> {
                 this.nextImg()
             }, 3000)
+        },
+        // Funzione per stoppare l'autoscroll
+        stopAutoscroll(){
+            clearInterval(this.autoScroll);
         }
     },
 }).mount('#app')

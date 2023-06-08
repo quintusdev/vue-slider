@@ -14,7 +14,7 @@
     <div id="app">
 
         <div class="container">
-            <div class="slider-wrapper" tabindex="0">
+            <div class="slider-wrapper" tabindex="0" @mouseover="stopAutoscroll" @mouseleave="startAutoScroll">
 
                 <div class="item">
                     <!-- Con il BIND inserisco le proprieta' dell'oggetto in posizione 0 -->
